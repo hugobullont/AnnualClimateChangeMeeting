@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div>Guests Registration</div>
+    <form method="POST" action="RegistrationServlet">
+      <table>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" id="txtName" name="txtName"/></td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td><input type="text" id="txtAge" name="txtAge"/></td>
+        </tr>
+        <tr>
+          <td>Donated Amount</td>
+          <td><input type="text" id="txtDonatedAmount" 
+                     name="txtDonatedAmount"/></td>
+        </tr>
+        <tr>
+          <td>Organization</td>
+          <td>
+            <select id="slOrganization" name="slOrganization">
+              <option value="Other" selected>Other</option>
+              <option value="Anonymous">Anonymous</option>
+              <option value="Green Peace">Green Peace</option>
+              <option value="United Nations">United Nations</option>
+              <option value="WWF">WWF</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" id="rbMale" 
+                   name="rbGender" value="Male" checked/>Male
+            <input type="radio" id="rbFemale" 
+                   name="rbGender" value="Female"/>Female
+          </td>
+        </tr>
+        <tr>
+          <td>Interests</td>
+          <td>
+            <input type="checkbox" id="chkRecycle"
+                   name="chkInterests" value="Recycle"/>Recycle
+            <input type="checkbox" id="chkOceans"
+                   name="chkInterests" value="Oceans"/>Oceans
+            <input type="checkbox" id="chkBiodiversity"
+                   name="chkInterests" value="Bio Diversity"/>Bio Diversity
+            <input type="checkbox" id="chkNaturalParks"
+                   name="chkInterests" value="Natural Parks"/>Natural Parks
+          </td>
+        </tr>
+        <tr>
+          <td>Politician</td>
+          <td><input type="checkbox" id="chkPolitician"
+                     name="chkPolitician" value="true"/></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" id="btnRegister" 
+                     name="btnOption" value="Register"/>
+            <input type="submit" id="btnList"
+                   name="btnList" value="List"/>
+          </td>
+        </tr>
+      </table>        
+    </form>
+  </body>
+</html>
